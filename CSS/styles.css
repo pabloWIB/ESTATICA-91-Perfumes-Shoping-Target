@@ -35,6 +35,8 @@
 header {
   display: flex;
   width: 100%;
+  background: url("../IMG/BACKGROUNDS/Background.jpg") center center no-repeat;
+  background-size: cover;
   flex-flow: column wrap;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,7 +296,7 @@ header > :nth-child(2) .whatsAppCallActions a p {
     display: flex;
     width: 100%;
     flex-flow: column wrap;
-    background: url("../IMG/BACKGROUNDS/Background.jpg");
+    background: url("../IMG/BACKGROUNDS/Background.jpg") center center;
     background-size: cover;
     background-repeat: no-repeat;
     gap: 5rem;
