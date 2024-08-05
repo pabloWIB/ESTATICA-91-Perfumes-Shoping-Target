@@ -1,5 +1,39 @@
 // HEADER
 
+.whatsAppCallActions{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    a{
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background: #40C351;
+        border-radius: 20px;
+        padding: .25rem .5rem;
+        gap: .5rem;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        animation: scaleUpDown 5s linear infinite;
+        &:hover{
+            text-decoration: none;
+        }
+        >:nth-child(1){
+            width: min(45px, 100%);
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            all: unset;
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+}
+
 header{
     display: flex;
     width: 100%;
@@ -579,38 +613,6 @@ header{
 
 // Main
 
-.tabs {
-    display: flex;    
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2.5rem 0rem;
-    .tab-button {
-        all: unset;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 20px;
-        color: #ffffff;
-        &:hover{
-            text-decoration: underline .12rem solid rgb(255, 255, 255);
-        text-underline-offset: .15rem;
-        }
-    }
-    .tab-button.active {
-        text-decoration: underline .12rem solid rgb(255, 255, 255);
-        text-underline-offset: .15rem;
-    }
-}
-
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
 main{
     display: flex;
     flex-flow: column wrap;
@@ -670,40 +672,6 @@ main{
                     }
                 }
             }
-        }
-    }
-}
-
-.whatsAppCallActions{
-    display: flex;
-    place-content: center;
-    align-items: center;
-    a{
-        all: unset;
-        cursor: pointer;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        background: #40C351;
-        border-radius: 20px;
-        padding: .25rem .5rem;
-        gap: .5rem;
-        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-        animation: scaleUpDown 5s linear infinite;
-        &:hover{
-            text-decoration: none;
-        }
-        >:nth-child(1){
-            width: min(45px, 100%);
-            img{
-                width: 100%;
-            }
-        }
-        p{
-            all: unset;
-            color: white;
-            font-weight: 600;
-            font-size: 30px;
         }
     }
 }
