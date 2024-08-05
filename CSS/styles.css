@@ -1,0 +1,1040 @@
+header {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
+header > :nth-child(1) {
+  transform: translateY(-100%);
+}
+header > :nth-child(1) {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  place-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+header > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 92.5%;
+  max-width: 1200px;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(1) h1 {
+  all: unset;
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 1rem;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
+  all: unset;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 7.5px;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) {
+  width: 100%;
+  max-width: 35px;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) img {
+  width: 100%;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a h2 {
+  all: unset;
+  font-size: 20px;
+  font-weight: 800x;
+  color: white;
+}
+header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+header > :nth-child(2) {
+  transform: translateY(100%);
+  opacity: 0;
+}
+header > :nth-child(2) {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  width: 92.5%;
+  gap: 2rem;
+  padding: 2.5rem 0rem;
+}
+header > :nth-child(2) h2, header > :nth-child(2) h3, header > :nth-child(2) p, header > :nth-child(2) a {
+  all: unset;
+  color: white;
+}
+header > :nth-child(2) h2 {
+  font-size: 38px;
+  font-weight: 700;
+}
+header > :nth-child(2) h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+header > :nth-child(2) > :nth-child(3) p {
+  font-size: 27.5px;
+  font-weight: 500;
+}
+header > :nth-child(2) > :nth-child(4) {
+  font-size: 25px;
+  font-weight: 500;
+}
+header > :nth-child(2) .whatsAppCallActions {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+header > :nth-child(2) .whatsAppCallActions a {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background: #40C351;
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  animation: scaleUpDown 5s linear infinite;
+}
+header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) {
+  width: min(45px, 100%);
+}
+header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) img {
+  width: 100%;
+}
+header > :nth-child(2) .whatsAppCallActions a p {
+  all: unset;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.headerAnimation {
+  background: url("../IMG/BACKGROUNDS/Background.jpg") center center no-repeat;
+  background-size: cover;
+}
+.headerAnimation > :nth-child(1) {
+  transform: translateY(0%);
+  transition: 1s;
+}
+.headerAnimation > :nth-child(2) {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 1s;
+}
+
+.enlaces {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+.enlaces > :nth-child(1), .enlaces > :nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.enlaces > :nth-child(1) > a, .enlaces > :nth-child(2) > a {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5rem;
+  width: 150px;
+  cursor: pointer;
+}
+.enlaces > :nth-child(1) > a > :nth-child(1), .enlaces > :nth-child(2) > a > :nth-child(1) {
+  background: #3E432E;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+}
+.enlaces > :nth-child(1) > a > :nth-child(1) > :nth-child(1), .enlaces > :nth-child(2) > a > :nth-child(1) > :nth-child(1) {
+  width: min(40px, 100%);
+}
+.enlaces > :nth-child(1) > a > :nth-child(1) > :nth-child(1) img, .enlaces > :nth-child(2) > a > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+}
+.enlaces > :nth-child(1) > a > :nth-child(2) h6, .enlaces > :nth-child(2) > a > :nth-child(2) h6 {
+  all: unset;
+  font-weight: 600;
+  font-size: 20px;
+}
+.enlaces > :nth-child(1) > a:hover > :nth-child(1), .enlaces > :nth-child(2) > a:hover > :nth-child(1) {
+  scale: 1.1;
+}
+
+@media (max-width: 600px) {
+  .enlaces {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+  .enlaces > :nth-child(1), .enlaces > :nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .enlaces > :nth-child(1) > a, .enlaces > :nth-child(2) > a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 0.25rem;
+    width: 100px;
+    cursor: pointer;
+  }
+  .enlaces > :nth-child(1) > a > :nth-child(1), .enlaces > :nth-child(2) > a > :nth-child(1) {
+    background: #3E432E;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  .enlaces > :nth-child(1) > a > :nth-child(1) > :nth-child(1), .enlaces > :nth-child(2) > a > :nth-child(1) > :nth-child(1) {
+    width: min(35px, 100%);
+  }
+  .enlaces > :nth-child(1) > a > :nth-child(1) > :nth-child(1) img, .enlaces > :nth-child(2) > a > :nth-child(1) > :nth-child(1) img {
+    width: 100%;
+  }
+  .enlaces > :nth-child(1) > a > :nth-child(2) h6, .enlaces > :nth-child(2) > a > :nth-child(2) h6 {
+    all: unset;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .enlaces > :nth-child(1) > a:hover > :nth-child(1), .enlaces > :nth-child(2) > a:hover > :nth-child(1) {
+    scale: 1.1;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    transition: 10s;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    background: url("../IMG/BACKGROUNDS/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 5rem;
+    padding-bottom: 5rem;
+  }
+  header > :nth-child(1) {
+    transform: translateY(-100%);
+  }
+  header > :nth-child(1) {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+  header > :nth-child(1) > :nth-child(1) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 92.5%;
+    max-width: 1200px;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(1) h1 {
+    all: unset;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
+    all: unset;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 7.5px;
+    padding: 0.5rem;
+    transition: 0.3s;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) {
+    width: 100%;
+    max-width: 30px;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) img {
+    width: 100%;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a h2 {
+    all: unset;
+    font-size: 17px;
+    font-weight: 800x;
+    color: white;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  header > :nth-child(2) {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  header > :nth-child(2) {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 92.5%;
+    gap: 2rem;
+    padding: 2.5rem 0rem;
+  }
+  header > :nth-child(2) h2, header > :nth-child(2) h3, header > :nth-child(2) p, header > :nth-child(2) a {
+    all: unset;
+    color: white;
+  }
+  header > :nth-child(2) h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header > :nth-child(2) h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) > :nth-child(3) p {
+    font-size: 17.5px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) > :nth-child(4) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) .whatsAppCallActions {
+    display: flex;
+    place-content: center;
+    align-items: center;
+  }
+  header > :nth-child(2) .whatsAppCallActions a {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #40C351;
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    gap: 0.5rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    animation: scaleUpDown 5s linear infinite;
+  }
+  header > :nth-child(2) .whatsAppCallActions a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) {
+    width: min(30px, 100%);
+  }
+  header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) img {
+    width: 100%;
+  }
+  header > :nth-child(2) .whatsAppCallActions a p {
+    all: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    transition: 10s;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    background: url("../IMG/photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 5rem;
+    padding-bottom: 5rem;
+  }
+  header > :nth-child(1) {
+    transform: translateY(-100%);
+  }
+  header > :nth-child(1) {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+  header > :nth-child(1) > :nth-child(1) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 92.5%;
+    max-width: 1200px;
+    gap: 1rem;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(1) h1 {
+    all: unset;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
+    all: unset;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 7.5px;
+    padding: 0.5rem;
+    transition: 0.3s;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) {
+    width: 100%;
+    max-width: 25px;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) img {
+    width: 100%;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a h2 {
+    all: unset;
+    font-size: 16px;
+    font-weight: 800x;
+    color: white;
+  }
+  header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  header > :nth-child(2) {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  header > :nth-child(2) {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 92.5%;
+    gap: 2rem;
+    padding: 2.5rem 0rem;
+  }
+  header > :nth-child(2) h2, header > :nth-child(2) h3, header > :nth-child(2) p, header > :nth-child(2) a {
+    all: unset;
+    color: white;
+  }
+  header > :nth-child(2) h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  header > :nth-child(2) h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) > :nth-child(3) p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) > :nth-child(4) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header > :nth-child(2) .whatsAppCallActions {
+    display: flex;
+    place-content: center;
+    align-items: center;
+  }
+  header > :nth-child(2) .whatsAppCallActions a {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #40C351;
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    gap: 0.5rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    animation: scaleUpDown 5s linear infinite;
+  }
+  header > :nth-child(2) .whatsAppCallActions a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) {
+    width: min(30px, 100%);
+  }
+  header > :nth-child(2) .whatsAppCallActions a > :nth-child(1) img {
+    width: 100%;
+  }
+  header > :nth-child(2) .whatsAppCallActions a p {
+    all: unset;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.tabs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 0rem;
+}
+.tabs .tab-button {
+  all: unset;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+}
+.tabs .tab-button:hover {
+  -webkit-text-decoration: underline 0.12rem solid rgb(255, 255, 255);
+          text-decoration: underline 0.12rem solid rgb(255, 255, 255);
+  text-underline-offset: 0.15rem;
+}
+.tabs .tab-button.active {
+  -webkit-text-decoration: underline 0.12rem solid rgb(255, 255, 255);
+          text-decoration: underline 0.12rem solid rgb(255, 255, 255);
+  text-underline-offset: 0.15rem;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+}
+main .buttonsSelection {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1250px, 85%);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+main .buttonsSelection > :nth-child(1), main .buttonsSelection > :nth-child(2) {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7.5px;
+}
+main .buttonsSelection > :nth-child(1) p, main .buttonsSelection > :nth-child(2) p {
+  all: unset;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+main .buttonsSelection > :nth-child(1) .imagePrevNext, main .buttonsSelection > :nth-child(2) .imagePrevNext {
+  width: min(55px, 100%);
+  transform: translateY(-15%);
+}
+main .buttonsSelection > :nth-child(1) .imagePrevNext svg, main .buttonsSelection > :nth-child(2) .imagePrevNext svg {
+  fill: white;
+  width: 100%;
+}
+main .carousel {
+  width: min(1250px, 85%);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  place-content: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+main .carousel .carousel-item .container {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+main .carousel .carousel-item .container .uno {
+  width: 50%;
+  width: min(450px, 95%);
+}
+main .carousel .carousel-item .container .uno img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.whatsAppCallActions {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.whatsAppCallActions a {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background: #40C351;
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  animation: scaleUpDown 5s linear infinite;
+}
+.whatsAppCallActions a:hover {
+  text-decoration: none;
+}
+.whatsAppCallActions a > :nth-child(1) {
+  width: min(45px, 100%);
+}
+.whatsAppCallActions a > :nth-child(1) img {
+  width: 100%;
+}
+.whatsAppCallActions a p {
+  all: unset;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.carrusel2 {
+  width: min(1250px, 85%);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem 0rem;
+  align-items: center;
+  place-content: center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.carrusel2 .buttonsSelection {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1250px, 100%);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.carrusel2 .buttonsSelection > :nth-child(1), .carrusel2 .buttonsSelection > :nth-child(2) {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7.5px;
+}
+.carrusel2 .buttonsSelection > :nth-child(1) p, .carrusel2 .buttonsSelection > :nth-child(2) p {
+  all: unset;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.carrusel2 .buttonsSelection > :nth-child(1) .imagePrevNext, .carrusel2 .buttonsSelection > :nth-child(2) .imagePrevNext {
+  width: min(55px, 100%);
+  transform: translateY(-15%);
+}
+.carrusel2 .buttonsSelection > :nth-child(1) .imagePrevNext svg, .carrusel2 .buttonsSelection > :nth-child(2) .imagePrevNext svg {
+  width: 100%;
+}
+.carrusel2 .carousel {
+  width: min(1250px, 85%);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  place-content: center;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.carrusel2 .carousel .carousel-item .container {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+.carrusel2 .carousel .carousel-item .container .uno {
+  width: 50%;
+  width: min(450px, 95%);
+}
+.carrusel2 .carousel .carousel-item .container .uno img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  place-content: center;
+  padding: 50px 0px;
+  background: #3E432E;
+  font-family: "Archivo", sans-serif;
+  transform: translateY(-5%);
+}
+footer > :nth-child(1) {
+  width: min(1250px, 85%);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+footer > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%;
+  gap: 3.85rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 10rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.95rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) svg {
+  fill: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) svg:hover {
+  transform: scale(1.05);
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a {
+  all: unset;
+  transition: 0.3s;
+  font-size: 15.5px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a > :nth-child(1) {
+  width: min(25px, 100%);
+  cursor: pointer;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a > :nth-child(1):hover {
+  transform: scale(1.05);
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a > :nth-child(1) img {
+  width: 100%;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a p {
+  cursor: pointer;
+}
+footer > :nth-child(1) > :nth-child(1) > :nth-child(2) a p:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+footer > :nth-child(1) > :nth-child(1) .specialFixBootstrap a > :nth-child(1) {
+  transform: translateY(-25%);
+}
+footer > :nth-child(1) > :nth-child(1) .specialFixBootstrap a > :nth-child(1):hover {
+  transform: translateY(-25%) scale(1.05);
+}
+footer > :nth-child(1) > :nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) a {
+  all: unset;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  padding: 0.5rem 0.65rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) a:hover {
+  transform: scale(1.05); /* Slightly scale up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transition: 0.5s;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) a > :nth-child(1) {
+  width: min(25px, 90%);
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) a > :nth-child(1) svg {
+  width: 100%;
+  fill: #3E432E;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(1) a > :nth-child(2) p {
+  all: unset;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3E432E;
+  font-weight: 600;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(2) p {
+  all: unset;
+  font-size: 15.5px;
+  color: white;
+  cursor: default;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(2) p::-moz-selection {
+  background: none;
+}
+footer > :nth-child(1) > :nth-child(2) > :nth-child(2) p::selection {
+  background: none;
+}
+
+@media (max-width: 1050px) {
+  footer {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  footer > :nth-child(1) {
+    width: 95%;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer > :nth-child(1) > :nth-child(1) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    max-width: 7.5rem;
+  }
+  footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.95rem;
+  }
+  footer > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+    gap: 0rem;
+  }
+  footer > :nth-child(1) > :nth-child(2) {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  footer > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+}
+.whatsappScreenPositionInternal {
+  position: fixed;
+  margin-bottom: 1.2rem;
+  margin-right: 1.2rem;
+  right: 0;
+  bottom: 0%;
+  z-index: 20;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.whatsappScreenPositionInternal > :nth-child(1) {
+  border-radius: 20px 0px 0px 20px;
+  border-right: 1px solid black;
+}
+.whatsappScreenPositionInternal > :nth-child(2) {
+  border-radius: 0px 20px 20px 0px;
+  border-left: 1px solid black;
+}
+.whatsappScreenPositionInternal > :nth-child(1), .whatsappScreenPositionInternal > :nth-child(2) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem;
+  gap: 0.5rem;
+  background: white;
+}
+.whatsappScreenPositionInternal > :nth-child(1):hover, .whatsappScreenPositionInternal > :nth-child(2):hover {
+  background: rgb(198, 198, 198);
+}
+.whatsappScreenPositionInternal > :nth-child(1):hover > :nth-child(2) p, .whatsappScreenPositionInternal > :nth-child(2):hover > :nth-child(2) p {
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+}
+.whatsappScreenPositionInternal > :nth-child(1) > :nth-child(1), .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(1) {
+  width: min(30px, 100%);
+}
+.whatsappScreenPositionInternal > :nth-child(1) > :nth-child(1) img, .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(1) img {
+  width: 100%;
+}
+.whatsappScreenPositionInternal > :nth-child(1) > :nth-child(2) p, .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(2) p {
+  all: unset;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+@media (max-width: 450px) {
+  .whatsappScreenPositionInternal {
+    position: fixed;
+    margin: 0 auto;
+    right: 0%;
+    bottom: 1%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+  }
+  .whatsappScreenPositionInternal > :nth-child(1) {
+    border-radius: 20px 0px 0px 20px;
+    border-right: 1px solid black;
+  }
+  .whatsappScreenPositionInternal > :nth-child(2) {
+    border-radius: 0px 20px 20px 0px;
+    border-left: 1px solid black;
+  }
+  .whatsappScreenPositionInternal > :nth-child(1), .whatsappScreenPositionInternal > :nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem;
+    gap: 0.5rem;
+    background: white;
+  }
+  .whatsappScreenPositionInternal > :nth-child(1):hover, .whatsappScreenPositionInternal > :nth-child(2):hover {
+    background: rgb(198, 198, 198);
+  }
+  .whatsappScreenPositionInternal > :nth-child(1):hover > :nth-child(2) p, .whatsappScreenPositionInternal > :nth-child(2):hover > :nth-child(2) p {
+    -webkit-text-decoration: underline black;
+            text-decoration: underline black;
+  }
+  .whatsappScreenPositionInternal > :nth-child(1) > :nth-child(1), .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(1) {
+    width: min(30px, 100%);
+  }
+  .whatsappScreenPositionInternal > :nth-child(1) > :nth-child(1) img, .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(1) img {
+    width: 100%;
+  }
+  .whatsappScreenPositionInternal > :nth-child(1) > :nth-child(2) p, .whatsappScreenPositionInternal > :nth-child(2) > :nth-child(2) p {
+    all: unset;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+  }
+}/*# sourceMappingURL=styles.css.map */

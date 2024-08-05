@@ -1,0 +1,1101 @@
+// HEADER
+
+header{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 5rem;
+    padding-bottom: 5rem;
+    >:nth-child(1){
+        transform: translateY(-100%);
+    }
+    >:nth-child(1){
+        width: 100%;
+        background: rgba(#000000, .2);
+        display: flex;
+        place-content: center;
+        align-items: center;
+        padding: 1rem 0rem;
+        >:nth-child(1){
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 92.5%;
+            max-width: 1200px;
+            >:nth-child(1){
+                h1{
+                    all: unset;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                gap: 1rem;
+                >a{
+                    all: unset;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    gap: .5rem;
+                    cursor: pointer;
+                    border: 2px solid white;
+                    border-radius: 7.5px;
+                    padding: .5rem;
+                    transition: .3s;
+                    >:nth-child(1){
+                        width: 100%;
+                        max-width: 35px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    h2{
+                        all: unset;
+                        font-size: 20px;
+                        font-weight: 800x;
+                        color: white;
+                    }
+                }
+                a:hover{
+                    transform: scale(1.05);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    >:nth-child(2){
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    >:nth-child(2){
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        max-width: 1200px;
+        width: 92.5%;
+        gap: 2rem;
+        padding: 2.5rem 0rem;
+        h2, h3, p , a{
+            all: unset;
+            color: white;
+        }
+        h2{
+            font-size: 38px;
+            font-weight: 700;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        >:nth-child(3){
+            p{
+                font-size: 27.5px;
+                font-weight: 500;
+            }
+        }
+        >:nth-child(4){
+                font-size: 25px;
+                font-weight: 500;
+        }
+        .whatsAppCallActions{
+            display: flex;
+            place-content: center;
+            align-items: center;
+            a{
+                all: unset;
+                cursor: pointer;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                background: #40C351;
+                border-radius: 20px;
+                padding: .25rem .5rem;
+                gap: .5rem;
+                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+                animation: scaleUpDown 5s linear infinite;
+                >:nth-child(1){
+                    width: min(45px, 100%);
+                    img{
+                        width: 100%;
+                    }
+                }
+                p{
+                    all: unset;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+            }
+        }
+    }   
+}
+
+@keyframes scaleUpDown {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.15);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    60% {
+        transform: scale(1.15);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.headerAnimation{
+    background: url('../IMG/BACKGROUNDS/Background.jpg') center center no-repeat;
+    background-size: cover;
+    >:nth-child(1){
+        transform: translateY(0%);
+        transition: 1s;
+    }
+    >:nth-child(2){
+        transform: translateY(0%);
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+.enlaces{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    >:nth-child(1), >:nth-child(2){
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        >a{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            gap: .5rem;
+            width: 150px;
+            cursor: pointer;
+            >:nth-child(1){
+                background: #3E432E;
+                border-radius: 50%;
+                padding: .5rem;
+                display: flex;
+                place-content: center;
+                align-items: center;
+                height: 60px;
+                width: 60px;
+                >:nth-child(1){
+                    width: min(40px, 100%);
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            >:nth-child(2){
+                h6{
+                    all: unset;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+        >a:hover{
+            >:nth-child(1){
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .enlaces{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        >:nth-child(1), >:nth-child(2){
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            >a{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                gap: .25rem;
+                width: 100px;
+                cursor: pointer;
+                >:nth-child(1){
+                    background: #3E432E;
+                    border-radius: 50%;
+                    padding: .5rem;
+                    >:nth-child(1){
+                        width: min(35px, 100%);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    h6{
+                        all: unset;
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+                }
+            }
+            >a:hover{
+                >:nth-child(1){
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+// HEADER ---
+
+// HEADER MEDIA 
+
+@media(max-width: 800px){
+    header{
+        transition: 10s;
+        display: flex;
+        width: 100%;
+        flex-flow: column wrap;
+        background: url('../IMG/BACKGROUNDS/Background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 5rem;
+        padding-bottom: 5rem;
+        >:nth-child(1){
+            transform: translateY(-100%);
+        }
+        >:nth-child(1){
+            width: 100%;
+            background: rgba(#000000, .2);
+            display: flex;
+            place-content: center;
+            align-items: center;
+            padding: 1rem 0rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 92.5%;
+                max-width: 1200px;
+                >:nth-child(1){
+                    h1{
+                        all: unset;
+                        font-size: 25px;
+                        color: white;
+                        font-weight: 700;
+                    }
+                }
+                >:nth-child(2){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    gap: 1rem;
+                    >a{
+                        all: unset;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        gap: .5rem;
+                        cursor: pointer;
+                        border: 2px solid white;
+                        border-radius: 7.5px;
+                        padding: .5rem;
+                        transition: .3s;
+                        >:nth-child(1){
+                            width: 100%;
+                            max-width: 30px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        h2{
+                            all: unset;
+                            font-size: 17px;
+                            font-weight: 800x;
+                            color: white;
+                        }
+                    }
+                    a:hover{
+                        transform: scale(1.05);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        >:nth-child(2){
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        >:nth-child(2){
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+            max-width: 1200px;
+            width: 92.5%;
+            gap: 2rem;
+            padding: 2.5rem 0rem;
+            h2, h3, p , a{
+                all: unset;
+                color: white;
+            }
+            h2{
+                font-size: 28px;
+                font-weight: 700;
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            >:nth-child(3){
+                p{
+                    font-size: 17.5px;
+                    font-weight: 500;
+                }
+            }
+            >:nth-child(4){
+                    font-size: 16px;
+                    font-weight: 500;
+            }
+            .whatsAppCallActions{
+                display: flex;
+                place-content: center;
+                align-items: center;
+                a{
+                    all: unset;
+                    cursor: pointer;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    background: #40C351;
+                    border-radius: 20px;
+                    padding: .25rem .5rem;
+                    gap: .5rem;
+                    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+                    animation: scaleUpDown 5s linear infinite;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: .5s;
+                    }
+                    >:nth-child(1){
+                        width: min(30px, 100%);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        all: unset;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }   
+    }
+    
+}
+
+@media(max-width: 650px){
+    header{
+        transition: 10s;
+        display: flex;
+        width: 100%;
+        flex-flow: column wrap;
+        background: url('../IMG/photo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        gap: 5rem;
+        padding-bottom: 5rem;
+        >:nth-child(1){
+            transform: translateY(-100%);
+        }
+        >:nth-child(1){
+            width: 100%;
+            background: rgba(#000000, .2);
+            display: flex;
+            flex-flow: column wrap;
+            place-content: center;
+            align-items: center;
+            padding: 1rem 0rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 92.5%;
+                max-width: 1200px;
+                gap: 1rem;
+                >:nth-child(1){
+                    width: 100%;
+                    text-align: center;
+                    h1{
+                        all: unset;
+                        font-size: 25px;
+                        color: white;
+                        font-weight: 700;
+                    }
+                }
+                >:nth-child(2){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    gap: .5rem;
+                    >a{
+                        all: unset;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        gap: .5rem;
+                        cursor: pointer;
+                        border: 2px solid white;
+                        border-radius: 7.5px;
+                        padding: .5rem;
+                        transition: .3s;
+                        >:nth-child(1){
+                            width: 100%;
+                            max-width: 25px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        h2{
+                            all: unset;
+                            font-size: 16px;
+                            font-weight: 800x;
+                            color: white;
+                        }
+                    }
+                    a:hover{
+                        transform: scale(1.05);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        >:nth-child(2){
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        >:nth-child(2){
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+            max-width: 1200px;
+            width: 92.5%;
+            gap: 2rem;
+            padding: 2.5rem 0rem;
+            h2, h3, p , a{
+                all: unset;
+                color: white;
+            }
+            h2{
+                font-size: 22px;
+                font-weight: 700;
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            >:nth-child(3){
+                p{
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+            >:nth-child(4){
+                    font-size: 16px;
+                    font-weight: 500;
+            }
+            .whatsAppCallActions{
+                display: flex;
+                place-content: center;
+                align-items: center;
+                a{
+                    all: unset;
+                    cursor: pointer;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    background: #40C351;
+                    border-radius: 20px;
+                    padding: .25rem .5rem;
+                    gap: .5rem;
+                    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+                    animation: scaleUpDown 5s linear infinite;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: .5s;
+                    }
+                    >:nth-child(1){
+                        width: min(30px, 100%);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        all: unset;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+// HEADER MEDIA ---
+
+// Main
+
+.tabs {
+    display: flex;    
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem 0rem;
+    .tab-button {
+        all: unset;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+        &:hover{
+            text-decoration: underline .12rem solid rgb(255, 255, 255);
+        text-underline-offset: .15rem;
+        }
+    }
+    .tab-button.active {
+        text-decoration: underline .12rem solid rgb(255, 255, 255);
+        text-underline-offset: .15rem;
+    }
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    .buttonsSelection{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1250px, 85%);
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        >:nth-child(1), >:nth-child(2){
+            all: unset;
+            cursor: pointer;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 7.5px;
+            p{
+                all: unset;
+                color: rgb(255, 255, 255);
+                font-size: 18px;
+            }
+            .imagePrevNext{
+                width: min(55px, 100%);
+                transform: translateY(-15%);
+                svg{
+                    fill: white;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .carousel{
+        width: min(1250px, 85%);
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        place-content: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        .carousel-item{
+            .container{
+                display: flex;
+                flex-flow: row wrap;
+                place-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                .uno{
+                    width: 50%;
+                    width: min(450px, 95%);
+                    img{
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.whatsAppCallActions{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    a{
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background: #40C351;
+        border-radius: 20px;
+        padding: .25rem .5rem;
+        gap: .5rem;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        animation: scaleUpDown 5s linear infinite;
+        &:hover{
+            text-decoration: none;
+        }
+        >:nth-child(1){
+            width: min(45px, 100%);
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            all: unset;
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+}
+
+.carrusel2{
+    width: min(1250px, 85%);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem 0rem;
+    align-items: center;
+    place-content: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    .buttonsSelection{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: min(1250px, 100%);
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        >:nth-child(1), >:nth-child(2){
+            all: unset;
+            cursor: pointer;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 7.5px;
+            p{
+                all: unset;
+                color: rgb(255, 255, 255);
+                font-size: 18px;
+            }
+            .imagePrevNext{
+                width: min(55px, 100%);
+                transform: translateY(-15%);
+                svg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .carousel{
+        width: min(1250px, 85%);
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        place-content: center;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        .carousel-item{
+            .container{
+                display: flex;
+                flex-flow: row wrap;
+                place-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+                .uno{
+                    width: 50%;
+                    width: min(450px, 95%);
+                    img{
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Main ---
+
+// FOOTER
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    place-content: center;
+    padding: 50px 0px;
+    background: #3E432E;
+    font-family: "Archivo", sans-serif;
+    transform: translateY(-5%);
+    >:nth-child(1){
+        width: min(1250px, 85%);
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        >:nth-child(1){
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6.5rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                height: 100%;
+                gap: 3.85rem;
+                >:nth-child(1){
+                    width: 100%;
+                    max-width: 10rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                >:nth-child(2){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: .95rem;
+                    svg{
+                        fill: white;
+                        cursor: pointer;
+                        transition: .1s;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: column wrap;
+                gap: .5rem;
+                a{
+                    all: unset;
+                    transition: .3s;
+                    font-size: 15.5px;
+                    font-weight: 500;
+                    color: white;
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    gap: .5rem;
+                    >:nth-child(1){
+                        width: min(25px, 100%);
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    p{
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                            text-underline-offset: .25rem;
+                        }
+                    }
+                }
+            }
+            .specialFixBootstrap{
+                a{
+                    >:nth-child(1){
+                        transform: translateY(-25%);
+                        &:hover{
+                            transform: translateY(-25%) scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+        >:nth-child(2){
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                a{
+                    all: unset;
+                    cursor: pointer;
+                    background: rgb(255, 255, 255);
+                    padding: .5rem .65rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .45rem;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 5px 2px rgba($color: #000000, $alpha: .1);
+                    transition: .5s;
+                    &:hover{
+                        transform: scale(1.05); /* Slightly scale up */
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+                        transition: .5s;
+                    }
+                    >:nth-child(1){
+                        width: min(25px, 90%);
+                        svg{
+                            width: 100%;
+                            fill: #3E432E;
+                        }
+                    }
+                    >:nth-child(2){
+                        p{
+                            all: unset;
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #3E432E;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            >:nth-child(2){
+                p{
+                    all: unset;
+                    font-size: 15.5px;
+                    color: white;
+                    cursor: default;
+                }
+                p::selection{
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER---
+
+// FOOTER MEDIAS(1050px) TABLET / fBackground ---
+
+@media(max-width:1050px){
+    footer{
+        width: 100%;
+        padding: 20px 0px;
+        >:nth-child(1){
+            width: 95%;
+            flex-flow: column wrap;
+            align-items: center;
+            gap: 1rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                gap: 2.5rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    gap: 1.5rem;
+                    >:nth-child(1){
+                        max-width: 7.5rem;
+                    }
+                    >:nth-child(2){
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: .95rem;
+                    }
+                }
+                >:nth-child(2){
+                    gap: 0rem;
+                }
+            }
+            >:nth-child(2){
+                gap: 1.5rem;
+                align-items: center;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER MEDIAS(1050px) TABLET / PHONE --- ---
+
+// WhatsApp screen 
+     
+.whatsappScreenPositionInternal{
+    position: fixed;
+    margin-bottom: 1.2rem;
+    margin-right: 1.2rem;
+    right: 0;
+    bottom: 0%;
+    z-index: 20;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    >:nth-child(1){
+        border-radius: 20px 0px 0px 20px;
+        border-right: 1px solid black;
+    }
+    >:nth-child(2){
+        border-radius: 0px 20px 20px 0px;
+        border-left: 1px solid black;
+    }
+    >:nth-child(1), >:nth-child(2){
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: .55rem;
+        gap: .5rem;
+        background: white;
+        &:hover{
+            background: rgb(198, 198, 198);
+            >:nth-child(2){
+                p{
+                    text-decoration: underline black;
+                }
+            }
+        }
+        >:nth-child(1){
+            width: min(30px, 100%);
+            img{
+                width: 100%;
+            }
+        }
+        >:nth-child(2){
+            p{
+                all: unset;
+                font-weight: 500;
+                font-size: 18px;
+                color: black;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 450px){     
+    .whatsappScreenPositionInternal{
+        position: fixed;
+        margin: 0 auto;
+        right: 0%;
+        bottom: 1%;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+        >:nth-child(1){
+            border-radius: 20px 0px 0px 20px;
+            border-right: 1px solid black;
+        }
+        >:nth-child(2){
+            border-radius: 0px 20px 20px 0px;
+            border-left: 1px solid black;
+        }
+        >:nth-child(1), >:nth-child(2){
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            padding: .55rem;
+            gap: .5rem;
+            background: white;
+            &:hover{
+                background: rgb(198, 198, 198);
+                >:nth-child(2){
+                    p{
+                        text-decoration: underline black;
+                    }
+                }
+            }
+            >:nth-child(1){
+                width: min(30px, 100%);
+                img{
+                    width: 100%;
+                }
+            }
+            >:nth-child(2){
+                p{
+                    all: unset;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+
+    }
+}
