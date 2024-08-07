@@ -465,7 +465,6 @@ header{
         display: flex;
         width: 100%;
         flex-flow: column wrap;
-        background: url('../IMG/photo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         gap: 5rem;
@@ -1015,7 +1014,7 @@ footer{
 
 }
 
-@media(max-width: 450px){     
+@media(max-width: 450px){
     .whatsappScreenPositionInternal{
         position: fixed;
         margin: 0 auto;
@@ -1066,6 +1065,5 @@ footer{
                 }
             }
         }
-
     }
 }

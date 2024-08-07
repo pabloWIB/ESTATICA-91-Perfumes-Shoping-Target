@@ -439,7 +439,6 @@ header > :nth-child(2) .whatsAppCallActions a p {
     display: flex;
     width: 100%;
     flex-flow: column wrap;
-    background: url("../IMG/photo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     gap: 5rem;
